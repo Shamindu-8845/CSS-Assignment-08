@@ -20,5 +20,15 @@
         <div>E</div>
         <div>F</div>
     </section>
+
+    <script>
+        let  data = ['A','B','C','D','E','F'];
+        const updateLetters=() =>{
+            let lastLetter = data.pop();
+            data.unshift(lastLetter);
+            console.log(data)
+        }
+        setInterval(updateLetters,3000);
+    </script>
 </body>
 </html>
