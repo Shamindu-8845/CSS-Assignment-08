@@ -2,23 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Assignment-08</title>
+    <title>Assignment-08 Fig-01</title>
 
     <style>
-        section{
+        section {
             display: flex;
-            justify-content:space-between;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .runner {
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left center;
+            background-image: url("assets/images/runner.gif");
+            width: 120px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            position: relative;
+        }
+        .house{
+            background-image: url("assets/images/house.gif");
+            background-size: contain;
+            background-position: right center;
+            background-repeat: no-repeat;
+            width:150px;
+            height: 150px;
         }
     </style>
 </head>
 <body>
     <section>
-        <div>A</div>
-        <div>B</div>
-        <div>C</div>
-        <div>D</div>
-        <div>E</div>
-        <div>F</div>
+        <div class="runner">A</div>
+        <div class="runner">B</div>
+        <div class="runner">C</div>
+        <div class="runner">D</div>
+        <div class="runner">E</div>
+        <div class="runner">F</div>
+
+        <div class="house"></div>
     </section>
 
     <script>
